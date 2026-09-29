@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!--파비콘-->
+  <link rel="icon" href="./images/favicon.png">
+  <!--외부스타일연결-->
+  <link href="https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@latest/xeicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+
+  <!--내부스타일연결-->
+  <link rel="stylesheet" href="./fonts/web_fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">My portfolio</h1>
+    <nav id="gnb">
+      <ul class="menu">
+        <li class="btn">main</li>
+        <li class="btn">about</li>
+        <li class="btn">works</li>
+        <li class="btn">contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="wrap">
+    <div class="container">
+      <section id="main" class="section">
+        <div id="main_bg">
+          <video id="back" autoplay muted playsinline>
+            <source src="./images/bg2.mp4">
+          </video>
+        </div>
+        <div id="main_inner">
+          <h2 class="title">
+            <span>생각보다 유능하고,</span>
+            <span>보기보다 섬세합니다.</span>
+          </h2>
+          <div class="sub_line">
+            <p class="sub1">&oplus; Rough outside, precise inside.<br> Crafting visuals that speak for themselves.</p>
+            <p class="sub2">&oplus; Quietly persistent, surprisingly detailed.<br> Welcome to my creative archive.</p>
+          </div>
+        </div>
+        <!--main(home):사이트에 접속시, 맨 처음 보이는 화면
+          한화면으로 스스로를 표현할 수 있는 내용으로 구성
+          (사진,이미지,슬라이드,동영상,슬로건(문구),효과,...)-->
+      </section>
+      <section id="about" class="section">
+        <p>about(profile):자신을 소개하는 영역, 개인정보 제외,
+          이력서에 표기되지 않는 내용, 주요내용들을 표기
+          (약력,기술(스킬),성향,취미,관심 - 인포그래픽)</p>
+      </section>
+      <section id="works" class="section">
+        <!--works(portfolio):작업한 프로젝트들을 진열하고, 
+          소개 및 설명(기획)을 첨부하고, 모달윈도우를 통해
+          세부페이지로 연결-->
+        <div class="work-header">
+          <div class="title-area">
+            <p class="sub-label">Selected Atelier Works</p>
+            <h2 class="main-title">Crafted Archive</h2>
+          </div>
+          <div class="scroll-guide">
+            Scroll / Drag to browse &rarr;
+          </div>
+        </div>
+
+        <div id="works_inner">
+          <div class="list">            
+            <!-- 01. 영상편집 -->
+            <div class="item">
+              <a href="detail-video.html" class="work-card" data-fancybox="portfolio" data-type="iframe">
+              <div class="thumb-box">
+                <img src="https://picsum.photos/900/620?random=11" alt="영상편집">
+              </div>
+              <div class="meta-info">
+                <div class="top-row">
+                  <span class="index-num">No. 01</span>
+                  <span class="category-stamp">Video Editing</span>
+                </div>
+                <h3 class="project-title">Commercial Film</h3>
+                <p class="project-desc">호흡감 있는 컷 편집과 필름 그레인 색보정(DI)으로 직조한 브랜드 필름.</p>
+              </div>
+            </a>
+            </div>
+
+            <!-- 02. 모션그래픽 -->
+            <div class="item">
+              <a href="detail-motion.html" class="work-card" data-fancybox="portfolio" data-type="iframe">
+                <div class="thumb-box">
+                  <img src="https://picsum.photos/900/620?random=12" alt="모션그래픽">
+                </div>
+                <div class="meta-info">
+                  <div class="top-row">
+                    <span class="index-num">No. 02</span>
+                    <span class="category-stamp">Motion Graphics</span>
+                  </div>
+                  <h3 class="project-title">Kinetic Identity</h3>
+                  <p class="project-desc">유기적인 타이포그래피 모션과 아날로그 질감을 결합한 인트로 시퀀스.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 03. 포스터 -->
+            <div class="item">
+              <a href="detail-poster.html" class="work-card" data-fancybox="portfolio" data-type="iframe">
+                <div class="thumb-box">
+                  <img src="https://picsum.photos/900/620?random=13" alt="포스터">
+                </div>
+                <div class="meta-info">
+                  <div class="top-row">
+                    <span class="index-num">No. 03</span>
+                    <span class="category-stamp">Poster Design</span>
+                  </div>
+                  <h3 class="project-title">Exhibition Visual</h3>
+                  <p class="project-desc">종이의 촉감과 대비를 고려한 활판 인쇄풍 아트 페스티벌 메인 포스터.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 04. 브랜딩 -->
+            <div class="item">
+              <a href="detail-branding.html" class="work-card" data-fancybox="portfolio" data-type="iframe">
+                <div class="thumb-box">
+                  <img src="https://picsum.photos/900/620?random=14" alt="브랜딩">
+                </div>
+                <div class="meta-info">
+                  <div class="top-row">
+                    <span class="index-num">No. 04</span>
+                    <span class="category-stamp">Branding</span>
+                  </div>
+                  <h3 class="project-title">Atelier Identity</h3>
+                  <p class="project-desc">장인 정신과 지속 가능한 원료의 가치를 담아낸 브랜드 아이덴티티 시스템.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 05. 카드뉴스 -->
+            <div class="item">
+              <a href="detail-cardnews.html" class="work-card" data-fancybox="portfolio" data-type="iframe">
+                <div class="thumb-box">
+                  <img src="https://picsum.photos/900/620?random=15" alt="카드뉴스">
+                </div>
+                <div class="meta-info">
+                  <div class="top-row">
+                    <span class="index-num">No. 05</span>
+                    <span class="category-stamp">Card News</span>
+                  </div>
+                  <h3 class="project-title">Editorial Story</h3>
+                  <p class="project-desc">디지털 피드에서도 한 장의 지면을 읽는 듯한 높은 가독성의 에디토리얼 카드뉴스.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 06. 브로슈어 -->
+            <div class="item">
+              <a href="detail-brochure.html" class="work-card" data-fancybox="portfolio" data-type="iframe">
+                <div class="thumb-box">
+                  <img src="https://picsum.photos/900/620?random=16" alt="브로슈어">
+                </div>
+                <div class="meta-info">
+                  <div class="top-row">
+                    <span class="index-num">No. 06</span>
+                    <span class="category-stamp">Brochure</span>
+                  </div>
+                  <h3 class="project-title">Craft Collection</h3>
+                  <p class="project-desc">공예 작품들의 결을 온전히 담아낸 여백 중심의 아카이브 북 & 브로슈어.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 07. 리플릿 -->
+            <div class="item">
+              <a href="detail-leaflet.html" class="work-card" data-fancybox="portfolio" data-type="iframe">
+                <div class="thumb-box">
+                  <img src="https://picsum.photos/900/620?random=17" alt="리플릿">
+                </div>
+                <div class="meta-info">
+                  <div class="top-row">
+                    <span class="index-num">No. 07</span>
+                    <span class="category-stamp">Leaflet</span>
+                  </div>
+                  <h3 class="project-title">Folding Guide</h3>
+                  <p class="project-desc">3단 접지(Z-fold) 전개 순서에 맞춘 입체적 동선 안내와 인포메이션 리플릿.</p>
+                </div>
+              </a>
+            </div>
+          </div><!--end:.list-->
+        </div><!--end:#works_inner-->
+      </section>
+
+      <section id="contact" class="section">
+        <p>contact : 맨 마지막 영역으로 생략해도 됨.
+          (끝인사, 맺음말, 연락수단(연락처), 방명록,
+          메일전송화면)</p>
+      </section>
+    </div><!--end:.container-->
+    <div class="pager"></div>
+    <div class="navi">
+      <div class="prev"><i class="xi-4x xi-caret-up-square-o"></i></div>
+      <div class="next"><i class="xi-4x xi-caret-down-square-o"></i></div>
+    </div>
+  </main>
+
+  <!--외부스크립트-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+  <!--내부스크립트-->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
