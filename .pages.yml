@@ -1,0 +1,63 @@
+media:
+  input: images
+  output: /images
+content:
+  - name: works
+    label: Works
+    type: file
+    path: data/works.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: 작품 ID, type: string, required: true }
+      - { name: title, label: 작품명, type: string, required: true }
+      - { name: category, label: 카테고리, type: string, required: true }
+      - { name: year, label: 연도, type: string }
+      - { name: thumbnail, label: 대표 이미지, type: image, required: true }
+      - { name: description, label: 간단한 설명, type: text }
+      - name: detailPage
+        label: 상세 페이지
+        type: reference
+        options:
+          collection: detail-pages
+          search: title,path
+          value: "{fields.path}"
+          label: "{fields.title} — {fields.path}"
+      - { name: legacyDetailPage, label: 기존 링크 (파일 없음), type: string, readonly: true }
+      - { name: published, label: 공개 여부, type: boolean, default: false }
+      - { name: featured, label: 대표 작품, type: boolean, default: false }
+      - { name: order, label: 노출 순서, type: number }
+  - name: detail-pages
+    label: Detail Pages
+    type: collection
+    path: content/detail-pages
+    format: json
+    filename: "{primary}.json"
+    exclude: [".gitkeep"]
+    fields:
+      - { name: title, label: 페이지명, type: string, required: true }
+      - { name: path, label: 실제 HTML 경로, type: string, required: true }
+    view:
+      primary: title
+      fields: [title, path]
+  - name: guestbook
+    label: Guestbook
+    type: collection
+    path: content/guestbook
+    format: json
+    exclude: [".gitkeep"]
+    operations: { create: false, rename: false, delete: true }
+    fields:
+      - { name: name, label: 이름, type: string, readonly: true }
+      - { name: message, label: 메시지, type: text, readonly: true }
+      - name: createdAt
+        label: 작성일
+        type: date
+        readonly: true
+        options: { time: true }
+      - { name: approved, label: 승인 여부, type: boolean, default: false }
+    view:
+      primary: name
+      fields: [name, message, createdAt, approved]
+      sort: [createdAt, name]
+      default: { sort: createdAt, order: desc }

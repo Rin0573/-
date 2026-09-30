@@ -1,0 +1,93 @@
+[
+  {
+    "id": "video",
+    "title": "Commercial Film",
+    "category": "Video Editing",
+    "year": "",
+    "thumbnail": "https://picsum.photos/900/620?random=11",
+    "description": "호흡감 있는 컷 편집과 필름 그레인 색보정(DI)으로 직조한 브랜드 필름.",
+    "detailPage": "",
+    "legacyDetailPage": "detail-video.html",
+    "published": true,
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "motion",
+    "title": "Kinetic Identity",
+    "category": "Motion Graphics",
+    "year": "",
+    "thumbnail": "https://picsum.photos/900/620?random=12",
+    "description": "유기적인 타이포그래피 모션과 아날로그 질감을 결합한 인트로 시퀀스.",
+    "detailPage": "",
+    "legacyDetailPage": "detail-motion.html",
+    "published": true,
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "poster",
+    "title": "Exhibition Visual",
+    "category": "Poster Design",
+    "year": "",
+    "thumbnail": "https://picsum.photos/900/620?random=13",
+    "description": "종이의 촉감과 대비를 고려한 활판 인쇄풍 아트 페스티벌 메인 포스터.",
+    "detailPage": "",
+    "legacyDetailPage": "detail-poster.html",
+    "published": true,
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "branding",
+    "title": "Atelier Identity",
+    "category": "Branding",
+    "year": "",
+    "thumbnail": "https://picsum.photos/900/620?random=14",
+    "description": "장인 정신과 지속 가능한 원료의 가치를 담아낸 브랜드 아이덴티티 시스템.",
+    "detailPage": "",
+    "legacyDetailPage": "detail-branding.html",
+    "published": true,
+    "featured": true,
+    "order": 4
+  },
+  {
+    "id": "cardnews",
+    "title": "Editorial Story",
+    "category": "Card News",
+    "year": "",
+    "thumbnail": "https://picsum.photos/900/620?random=15",
+    "description": "디지털 피드에서도 한 장의 지면을 읽는 듯한 높은 가독성의 에디토리얼 카드뉴스.",
+    "detailPage": "",
+    "legacyDetailPage": "detail-cardnews.html",
+    "published": true,
+    "featured": true,
+    "order": 5
+  },
+  {
+    "id": "brochure",
+    "title": "Craft Collection",
+    "category": "Brochure",
+    "year": "",
+    "thumbnail": "https://picsum.photos/900/620?random=16",
+    "description": "공예 작품들의 결을 온전히 담아낸 여백 중심의 아카이브 북 & 브로슈어.",
+    "detailPage": "",
+    "legacyDetailPage": "detail-brochure.html",
+    "published": true,
+    "featured": true,
+    "order": 6
+  },
+  {
+    "id": "leaflet",
+    "title": "Folding Guide",
+    "category": "Leaflet",
+    "year": "",
+    "thumbnail": "https://picsum.photos/900/620?random=17",
+    "description": "3단 접지(Z-fold) 전개 순서에 맞춘 입체적 동선 안내와 인포메이션 리플릿.",
+    "detailPage": "",
+    "legacyDetailPage": "detail-leaflet.html",
+    "published": true,
+    "featured": true,
+    "order": 7
+  }
+]
