@@ -59,3 +59,28 @@ const works_swiper = new Swiper('#works_inner', {
 Fancybox.bind("[data-fancybox]", {
   // 옵션 (필요 시)
 });
+// About keeps its own scrolling when the content is taller than the viewport.
+const aboutSection = document.getElementById('about');
+aboutSection.addEventListener('wheel', (event) => {
+  const canScrollDown = aboutSection.scrollTop + aboutSection.clientHeight < aboutSection.scrollHeight - 1;
+  const canScrollUp = aboutSection.scrollTop > 0;
+  if ((event.deltaY > 0 && canScrollDown) || (event.deltaY < 0 && canScrollUp)) {
+    event.stopPropagation();
+  }
+}, { passive: true });
+
+document.querySelectorAll('.about-nav a:not([data-about-contact])').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    const top = target.getBoundingClientRect().top - aboutSection.getBoundingClientRect().top + aboutSection.scrollTop - 24;
+    aboutSection.scrollTo({ top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  });
+});
+
+document.querySelectorAll('[data-about-contact]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    wrap_swiper.slideTo(3);
+  });
+});
