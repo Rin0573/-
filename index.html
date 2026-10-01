@@ -4,183 +4,392 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
 
-  <!--파비콘-->
+  <title>Smile063 | 미소로 사람을 잇다</title>
+
   <link rel="icon" href="./images/favicon.png">
-  <!--외부스타일연결-->
-  <link href="https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@latest/xeicon.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
 
-  <!--내부스타일연결-->
+  <!-- 기존 아이콘 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@latest/xeicon.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- 기본 폰트 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- 사이트 CSS -->
   <link rel="stylesheet" href="./fonts/web_fonts.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/about.css">
-  <link rel="stylesheet" href="./css/cms.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap">
 </head>
 
 <body>
-  <header>
-    <h1 id="title">My portfolio</h1>
-    <nav id="gnb">
-      <ul class="menu">
-        <li class="btn">main</li>
-        <li class="btn">about</li>
-        <li class="btn">works</li>
-        <li class="btn">contact</li>
-      </ul>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
+
+    <h1 class="logo">
+      <a href="#main">
+        Smile<span>063</span>
+      </a>
+    </h1>
+
+    <nav class="main-nav">
+      <a href="#main">MAIN</a>
+      <a href="#people">PEOPLE</a>
+      <a href="#magazine">MAGAZINE</a>
+      <a href="#archive">ARCHIVE</a>
+      <a href="#contact">CONTACT</a>
     </nav>
+
   </header>
 
-  <main id="wrap">
-    <div class="container">
-      <section id="main" class="section">
-        <div id="main_bg">
-          <video id="back" autoplay muted playsinline>
-            <source src="./images/bg2.mp4">
-          </video>
-        </div>
-        <div id="main_inner">
-          <h2 class="title">
-            <span>생각보다 유능하고,</span>
-            <span>보기보다 섬세합니다.</span>
+
+  <main>
+
+    <!-- =========================
+         MAIN / HERO
+    ========================== -->
+    <section id="main" class="hero">
+
+      <div class="hero-bg">
+        <img
+          src="./images/hero.png"
+          alt="Smile063 사람 이야기"
+        >
+      </div>
+
+      <!-- 큰 063 -->
+      <div class="hero-number" aria-hidden="true">
+        063
+      </div>
+
+      <div class="hero-content">
+
+        <p class="hero-label">
+          JEONBUK PEOPLE MAGAZINE
+        </p>
+
+        <h2>
+          미소로<br>
+          사람을 잇다
+        </h2>
+
+        <p class="hero-description">
+          전북의 사람과 이야기,<br>
+          그리고 우리가 살아가는 일상을 담습니다.
+        </p>
+
+        <a href="#people" class="hero-link">
+          PEOPLE STORIES
+          <span>→</span>
+        </a>
+
+      </div>
+
+      <div class="hero-smile" aria-hidden="true"></div>
+
+      <p class="hero-issue">
+        SMILE063<br>
+        MONTHLY MAGAZINE
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         PEOPLE
+    ========================== -->
+    <section id="people" class="people section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            PEOPLE
+          </p>
+
+          <h2>
+            우리는<br>
+            사람을 만납니다.
           </h2>
-          <div class="sub_line">
-            <p class="sub1">&oplus; Rough outside, precise inside.<br> Crafting visuals that speak for themselves.</p>
-            <p class="sub2">&oplus; Quietly persistent, surprisingly detailed.<br> Welcome to my creative archive.</p>
-          </div>
+
+          <p>
+            전북에서 살아가는 다양한 사람들의<br>
+            이야기를 기록합니다.
+          </p>
+
         </div>
-        <!--main(home):사이트에 접속시, 맨 처음 보이는 화면
-          한화면으로 스스로를 표현할 수 있는 내용으로 구성
-          (사진,이미지,슬라이드,동영상,슬로건(문구),효과,...)-->
-      </section>
-      <section id="about" class="section swiper-no-swiping" aria-labelledby="about-title">
-        <div class="about-hero">
-          <div class="about-intro">
-            <p class="about-eyebrow">DESIGNER</p>
-            <h2 id="about-title">Yelan<br>Park</h2>
-            <p class="about-lead">좋은 경험을 만드는 디자이너, 박예란입니다.</p>
-            <p class="about-description">사용자의 일상에 자연스럽게 스며드는<br>
-              디지털 경험을 디자인합니다.<br>
-              브랜드와 사용자가 더 가까워질 수 있는<br>
-              따뜻하고 섬세한 인터페이스를 고민합니다.</p>
-            <p class="about-motto">Designing meaningful<br>experiences for a better tomorrow.</p>
-          </div>
-          <img class="about-portrait" src="./images/hero.png" alt="작업실에서 디자인을 구상하는 디자이너" width="1141" height="594">
-          <nav class="about-nav" aria-label="자기소개 상세 메뉴">
-            <a href="#about-profile"><span>01</span>PROFILE</a>
-            <a href="#about-skills"><span>02</span>SKILLS</a>
-            <a href="#about-experience"><span>03</span>EXPERIENCE</a>
-            <a href="#contact" data-about-contact><span>04</span>CONTACT</a>
-          </nav>
-        </div>
-        <div class="about-details">
-          <section class="about-panel" id="about-profile" aria-labelledby="profile-title">
-            <h3 id="profile-title">PROFILE</h3>
-            <dl class="about-profile-list">
-              <div><dt>이름</dt><dd>박민서</dd></div>
-              <div><dt>생년월일</dt><dd>1997. 03. 12</dd></div>
-              <div><dt>거주지</dt><dd>전주, 대한민국</dd></div>
-              <div><dt>이메일</dt><dd>yelan.park@example.com</dd></div>
-              <div><dt>연락처</dt><dd>010-1234-5678</dd></div>
-              <div><dt>SNS</dt><dd class="about-socials">
-                <img src="./images/Social Icons.png" alt="Facebook" width="20" height="20">
-                <img src="./images/Social Icons (1).png" alt="X" width="20" height="20">
-                <img src="./images/Social Icons (2).png" alt="Instagram" width="20" height="20">
-                <img src="./images/Social Icons (3).png" alt="LinkedIn" width="20" height="20">
-              </dd></div>
-            </dl>
-            <a class="about-contact-button" href="#contact" data-about-contact>CONTACT ME <span aria-hidden="true">→</span></a>
-          </section>
-          <section class="about-panel" id="about-skills" aria-labelledby="skills-title">
-            <h3 id="skills-title">SKILLS</h3>
-            <h4>Design Tool</h4>
-            <div class="about-tools">
-              <img src="./images/div.tool.png" alt="Figma" width="58" height="76">
-              <img src="./images/div.tool (1).png" alt="Adobe Photoshop" width="58" height="88">
-              <img src="./images/div.tool (2).png" alt="Adobe Illustrator" width="58" height="86">
-              <img src="./images/div.tool (3).png" alt="Adobe After Effects" width="60" height="86">
+
+
+        <div class="people-grid">
+
+          <article class="people-card people-card-large">
+
+            <div class="people-image">
+              <img
+                src="./images/hero.png"
+                alt="사람 인터뷰"
+              >
             </div>
-            <h4 class="about-core-title">Core Skills</h4>
-            <ul class="about-skill-list">
-              <li><span>UI/UX Design</span><meter min="0" max="100" value="90" aria-label="UI/UX Design">90%</meter><span>90%</span></li>
-              <li><span>Visual Design</span><meter min="0" max="100" value="85" aria-label="Visual Design">85%</meter><span>85%</span></li>
-              <li><span>Interaction Design</span><meter min="0" max="100" value="80" aria-label="Interaction Design">80%</meter><span>80%</span></li>
-              <li><span>Branding</span><meter min="0" max="100" value="75" aria-label="Branding">75%</meter><span>75%</span></li>
-              <li><span>Prototyping</span><meter min="0" max="100" value="85" aria-label="Prototyping">85%</meter><span>85%</span></li>
-            </ul>
-          </section>
-          <section class="about-panel" id="about-experience" aria-labelledby="experience-title">
-            <h3 id="experience-title">EXPERIENCE</h3>
-            <ol class="about-timeline">
-              <li><span class="about-period">2024 – Present</span><div><h4>프리랜스 디자이너</h4><p>브랜드, 웹/앱, 그래픽 등<br>다양한 프로젝트 진행</p></div></li>
-              <li><span class="about-period">2022 – 2024</span><div><h4>(주) 모드스튜디오<br>UI/UX 디자이너</h4><p>웹·모바일 서비스 디자인,<br>브랜드 비주얼 제작</p></div></li>
-              <li><span class="about-period">2020 – 2022</span><div><h4>(주) 라이트컴퍼니<br>그래픽 디자이너</h4><p>온라인 콘텐츠 및 마케팅 디자인</p></div></li>
-              <li><span class="about-period">2016 – 2020</span><div><h4>홍익대학교 시각디자인과</h4><p>학사 졸업</p></div></li>
-            </ol>
-          </section>
-          <section class="about-panel about-more" aria-labelledby="more-title">
-            <h3 id="more-title">MORE ABOUT ME</h3>
-            <ul class="about-interests">
-              <li><span aria-hidden="true">☕</span><p>좋은 커피와 조용한 공간에서<br>아이디어를 찾는 걸 좋아해요.</p></li>
-              <li><span aria-hidden="true">▰</span><p>다양한 분야의 레퍼런스를 수집하고<br>기록하는 것을 즐깁니다.</p></li>
-              <li><span aria-hidden="true">✦</span><p>새로운 경험을 통해<br>시야를 넓히는 것을 좋아합니다.</p></li>
-            </ul>
-            <img class="about-detail-image" src="./images/div.detail-card.png" alt="책과 화병이 있는 공간. Small details make a big difference." width="370" height="195">
-          </section>
-        </div>
-      </section>
-      <section id="works" class="section">
-        <!--works(portfolio):작업한 프로젝트들을 진열하고, 
-          소개 및 설명(기획)을 첨부하고, 모달윈도우를 통해
-          세부페이지로 연결-->
-        <div class="work-header">
-          <div class="title-area">
-            <p class="sub-label">Selected Atelier Works</p>
-            <h2 class="main-title">Crafted Archive</h2>
-          </div>
-          <div class="scroll-guide">
-            Scroll / Drag to browse &rarr;
-          </div>
+
+            <div class="people-info">
+              <span>INTERVIEW 01</span>
+              <h3>우리 동네의<br>새로운 얼굴</h3>
+              <p>
+                평범한 일상 속에서<br>
+                특별한 이야기를 만들어가는 사람.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="people-card">
+
+            <div class="people-image">
+              <img
+                src="./images/hero.png"
+                alt="전북의 사람"
+              >
+            </div>
+
+            <div class="people-info">
+              <span>INTERVIEW 02</span>
+              <h3>오늘도<br>자리를 지키는 사람</h3>
+            </div>
+
+          </article>
+
+
+          <article class="people-card">
+
+            <div class="people-image">
+              <img
+                src="./images/hero.png"
+                alt="전북의 이야기"
+              >
+            </div>
+
+            <div class="people-info">
+              <span>INTERVIEW 03</span>
+              <h3>좋아하는 일을<br>계속하는 사람</h3>
+            </div>
+
+          </article>
+
         </div>
 
-        <div id="works_inner">
-          <div class="list" aria-live="polite"></div>
-          <p id="works-status" role="status"></p>
-        </div><!--end:#works_inner-->
-      </section>
+        <a href="#" class="more-link">
+          MORE PEOPLE
+          <span>→</span>
+        </a>
 
-      <section id="contact" class="section swiper-no-swiping">
-        <div class="contact-inner">
-          <h2>CONTACT</h2>
-          <form id="guestbook-form">
-            <label for="guest-name">Name</label>
-            <input id="guest-name" name="name" maxlength="40" required autocomplete="nickname">
-            <label for="guest-message">Message</label>
-            <textarea id="guest-message" name="message" maxlength="500" rows="4" required></textarea>
-            <div class="guest-trap" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
-            <p class="guest-notice">메시지는 공개 GitHub 저장소에 기록됩니다. 연락처 등 개인정보는 적지 마세요.</p>
-            <div id="guest-turnstile"></div>
-            <button type="submit" disabled>Leave a Message</button>
-            <p id="guest-status" role="status" aria-live="polite">방명록 연결을 확인하고 있습니다.</p>
-          </form>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAGAZINE
+    ========================== -->
+    <section id="magazine" class="magazine section">
+
+      <div class="magazine-inner">
+
+        <div class="magazine-number">
+          063
         </div>
-      </section>
-    </div><!--end:.container-->
-    <div class="pager"></div>
-    <div class="navi">
-      <div class="prev"><i class="xi-4x xi-caret-up-square-o"></i></div>
-      <div class="next"><i class="xi-4x xi-caret-down-square-o"></i></div>
-    </div>
+
+        <div class="magazine-content">
+
+          <p class="section-label">
+            MONTHLY MAGAZINE
+          </p>
+
+          <h2>
+            매달 새로운<br>
+            사람을 만납니다.
+          </h2>
+
+          <p>
+            Smile063는 전북의 사람과 지역의 이야기를<br>
+            한 권의 잡지에 담아 전합니다.
+          </p>
+
+          <div class="magazine-meta">
+            <span>SMILE063</span>
+            <span>VOL. 01</span>
+          </div>
+
+          <div class="magazine-buttons">
+            <a href="#" class="button">
+              MAGAZINE VIEW
+            </a>
+
+            <a href="#" class="text-link">
+              PDF 보기 →
+            </a>
+          </div>
+
+        </div>
+
+        <div class="magazine-cover">
+
+          <div class="cover-number">
+            063
+          </div>
+
+          <p>
+            미소로<br>
+            사람을 잇다
+          </p>
+
+          <span>
+            SMILE063
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ARCHIVE
+    ========================== -->
+    <section id="archive" class="archive section">
+
+      <div class="section-inner">
+
+        <div class="section-heading archive-heading">
+
+          <p class="section-label">
+            ARCHIVE
+          </p>
+
+          <h2>
+            지난 이야기
+          </h2>
+
+          <p>
+            Smile063가 기록해온<br>
+            사람과 지역의 이야기를 만나보세요.
+          </p>
+
+        </div>
+
+
+        <div class="archive-list">
+
+          <a href="#" class="archive-item">
+            <span class="archive-vol">VOL. 01</span>
+            <strong>미소로 사람을 잇다</strong>
+            <span class="archive-arrow">→</span>
+          </a>
+
+          <a href="#" class="archive-item">
+            <span class="archive-vol">VOL. 00</span>
+            <strong>전북의 오늘을 만나다</strong>
+            <span class="archive-arrow">→</span>
+          </a>
+
+          <a href="#" class="archive-item">
+            <span class="archive-vol">SPECIAL</span>
+            <strong>우리 동네 이야기</strong>
+            <span class="archive-arrow">→</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section id="contact" class="contact section">
+
+      <div class="contact-inner">
+
+        <p class="section-label">
+          CONTACT
+        </p>
+
+        <h2>
+          함께<br>
+          이야기를 만들어볼까요?
+        </h2>
+
+        <p class="contact-description">
+          Smile063와 함께하고 싶은<br>
+          브랜드와 사람들의 연락을 기다립니다.
+        </p>
+
+
+        <div class="contact-links">
+
+          <a href="mailto:advertising@smile063.com">
+            <span>01</span>
+            광고 문의
+            <strong>→</strong>
+          </a>
+
+          <a href="mailto:hello@smile063.com">
+            <span>02</span>
+            취재 · 인터뷰 문의
+            <strong>→</strong>
+          </a>
+
+          <a href="mailto:hello@smile063.com">
+            <span>03</span>
+            일반 문의
+            <strong>→</strong>
+          </a>
+
+        </div>
+
+
+        <footer>
+
+          <div class="footer-logo">
+            Smile<span>063</span>
+          </div>
+
+          <p>
+            미소로 사람을 잇다
+          </p>
+
+          <div class="footer-info">
+            JEONBUK · KOREA<br>
+            SMILE063 MONTHLY MAGAZINE
+          </div>
+
+          <p class="copyright">
+            © Smile063. All Rights Reserved.
+          </p>
+
+        </footer>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <!--외부스크립트-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
-  <!--내부스크립트-->
-  <script src="./js/script.js"></script>
-  <script src="./js/cms.js"></script>
+
+  <!-- 사이트 JS -->
+  <script src="./js/smile063.js"></script>
+
 </body>
 
 </html>
